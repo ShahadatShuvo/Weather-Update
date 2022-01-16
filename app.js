@@ -12,7 +12,7 @@ btn.addEventListener('click', function() {
 
     // api call 
     if (cityName != '') {
-        fetch('http://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&APPID=4678c6c72425604f8bacec0b6b0a7e02')
+        fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&APPID=4678c6c72425604f8bacec0b6b0a7e02')
             .then(response => response.json())
             .then(data => {
                 if (data.cod == '404') {
